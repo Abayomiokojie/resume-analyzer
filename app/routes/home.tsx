@@ -1,13 +1,33 @@
+import Navbar from "~/components/Navbar";
 import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "Zand" },
+    { name: "description", content: "Tailor your resume to your dream job!" },
   ];
 }
 
 export default function Home() {
-  return <Welcome />;
+  return;
+  <main className="bg-[url('/images/bg-main.svg')] bg-cover">
+    <Navbar />
+
+    <section className="main-section">
+      <div className="page-heading py-16">
+        <h1>Track Your Applications & Resume Ratings</h1>
+        <p className="mt-4">
+          Monitor the performance of your resumes across different job
+          applications.
+        </p>
+      </div>
+      <div className="animate-fadeIn mt-10 flex w-full max-w-4xl flex-col items-center justify-center rounded-lg bg-white/50 p-8 inset-shadow backdrop-blur-md">
+        <img
+          src="/images/analytics-dashboard.png"
+          alt="Analytics Dashboard"
+          className="w-full rounded-md shadow-md"
+        />
+      </div>
+    </section>
+  </main>;
 }
