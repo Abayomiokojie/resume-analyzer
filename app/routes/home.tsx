@@ -2,6 +2,9 @@ import Navbar from "~/components/Navbar";
 import type { Route } from "./+types/home";
 import { resumes } from "~/../constants";
 import ResumeCard from "~/components/ResumeCard";
+import { useEffect } from "react";
+import { useLocation, useNavigate } from "react-router";
+import { usePuterStore } from "~/lib/puter";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -11,6 +14,13 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home() {
+  const { isLoading, auth } = usePuterStore();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!auth.isAuthenticated) navigate("/auth?next=/");
+  }, [auth.isAuthenticated]);
+
   return (
     <main className="bg-[url('/images/bg-main.svg')] bg-cover">
       <Navbar />
@@ -32,13 +42,13 @@ export default function Home() {
           </div>
         )}
 
-        <div className="animate-fadeIn mt-10 flex w-full max-w-4xl flex-col items-center justify-center rounded-lg bg-white/50 p-8 inset-shadow backdrop-blur-md">
+        {/* <div className="animate-fadeIn mt-10 flex w-full max-w-4xl flex-col items-center justify-center rounded-lg bg-white/50 p-8 inset-shadow backdrop-blur-md">
           <img
             src="/images/analytics-dashboard.png"
             alt="Analytics Dashboard"
             className="w-full rounded-md shadow-md"
           />
-        </div>
+        </div> */}
       </section>
     </main>
   );
