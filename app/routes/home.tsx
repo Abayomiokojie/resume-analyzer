@@ -1,6 +1,7 @@
 import Navbar from "~/components/Navbar";
 import type { Route } from "./+types/home";
 import { resumes } from "~/../constants";
+import ResumeCard from "~/components/ResumeCard";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -23,11 +24,13 @@ export default function Home() {
           </h2>
         </div>
 
-        {resumes.map((resume) => (
-          <div>
-            <h1>{resume.jobTitle}</h1>
+        {resumes.length > 0 && (
+          <div className="resumes-section">
+            {resumes.map((resume) => (
+              <ResumeCard key={resume.id} resume={resume} />
+            ))}
           </div>
-        ))}
+        )}
 
         <div className="animate-fadeIn mt-10 flex w-full max-w-4xl flex-col items-center justify-center rounded-lg bg-white/50 p-8 inset-shadow backdrop-blur-md">
           <img
