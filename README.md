@@ -1,7 +1,7 @@
 <div align="center">
   <br />
-      <!-- <img src="public/readme/hero.webp" alt="Project Banner"> -->
       <h1 align="center">AI-Powered Resume Analyzer</h1>
+      <img src="public/readme/resume_analyzer.png" alt="Project Banner">
   <br />
 
   <div>
@@ -10,8 +10,6 @@
         <img src="https://img.shields.io/badge/-TypeScript-black?style=for-the-badge&logoColor=white&logo=typescript&color=3178C6" alt="TypeScript" />
     <img alt="Static Badge" src="https://img.shields.io/badge/Puter.js-181758?style=for-the-badge&logoColor=white">
   </div>
-
-  <!-- <h3 align="center">AI-Powered Resume Analyzer</h3> -->
 
 </div>
 
@@ -24,7 +22,7 @@
 
 ## <a name="introduction">✨ Introduction</a>
 
-AI-powered Resume Analyzer built with React, React Router, and Puter.js. Features seamless authentication, secure resume upload and storage, and intelligent candidate-job matching through AI evaluations. Provides tailored feedback and ATS scores for each listing, all within a clean, reusable UI.
+This is Zand, an AI-powered Resume Analyzer built with React, React Router, and Puter.js. Features seamless authentication, secure resume upload and storage, and intelligent candidate-job matching through AI evaluations. Provides tailored feedback and ATS scores for each listing, all within a clean, reusable UI.
 
 ## <a name="tech-stack">⚙️ Tech Stack</a>
 
