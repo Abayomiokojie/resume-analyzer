@@ -13,9 +13,8 @@
   </div>
 
 <div align="center">
-     <a href="https://zand-resume-analyzer-jkb6ll.puter.site"> click here to view Demo</a>
+     <a href="https://zand-resume-analyzer-jkb6ll.puter.site"> Click here to view Demo</a>
     </div>
-<a href="https://zand-resume-analyzer-jkb6ll.puter.site"> click here to view Demo</a>
 
 </div>
 
