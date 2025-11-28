@@ -2,6 +2,7 @@
   <br />
       <h1 align="center">AI-Powered Resume Analyzer</h1>
       <img src="public/readme/resume_analyzer.png" alt="Project Banner">
+
   <br />
 
   <div>
@@ -10,6 +11,11 @@
         <img src="https://img.shields.io/badge/-TypeScript-black?style=for-the-badge&logoColor=white&logo=typescript&color=3178C6" alt="TypeScript" />
     <img alt="Static Badge" src="https://img.shields.io/badge/Puter.js-181758?style=for-the-badge&logoColor=white">
   </div>
+
+<div align="center">
+     <a href="https://zand-resume-analyzer-jkb6ll.puter.site"> click here to view Demo</a>
+    </div>
+<a href="https://zand-resume-analyzer-jkb6ll.puter.site"> click here to view Demo</a>
 
 </div>
 
